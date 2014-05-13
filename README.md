@@ -1,6 +1,6 @@
 ## Ionic Iron IO ##
 
-An iOS / Android app made with <a href="https://angularjs.org/">AngularJS</a> / <a href="http://ionicframework.com/docs/">IonicFrame</a> / <a href="http://phonegap.com/">Cordova</a> to support basic functionality with IronIO. 
+An iOS / Android app made with <a href="https://angularjs.org/">AngularJS</a> / <a href="http://ionicframework.com/docs/">Ionic</a> / <a href="http://phonegap.com/">Cordova</a> to support basic functionality with IronIO. 
 
 made by @<a href="http://twitter.com/gregavola">gregavola</a>
 
