@@ -6,7 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
-.run(function($ionicPlatform, PushProcessingService) {
+.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.StatusBar) {
       // org.apache.cordova.statusbar required
