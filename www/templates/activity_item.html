@@ -1,0 +1,24 @@
+<ion-view title="Queue Info">
+  <ion-content class="has-header">
+  	<div class="item item-divider">
+      {{queue.name}} Information
+    </div>
+    <ion-list class="list">
+      <div class="list">
+	      <div class="item">
+	      	<h2>Current Pending Messages</h2>
+	      	<p>{{queue.size}}</p>
+	      </div>
+	      <div class="item">
+	      	<h2>Queue ID</h2>
+	      	<p>{{queue.id}}</p>
+	      </div>
+	      <div class="item">
+	      	<h2>Total Messages Processed</h2>
+	      	<p>{{queue.total_messages | number}}</p>
+	      </div>
+	  </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

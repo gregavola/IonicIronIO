@@ -1,0 +1,31 @@
+<div class="modal">
+	<ion-header-bar>
+		<h1 class="title">Queue New Job</h1>
+		 <button class="button button-clear button-positive" ng-click="closeModal()">Cancel</button>
+	</ion-header-bar>
+	<form id="add-job-form" name="myForm" ng-submit="createJob(event)">
+		<ion-content class="has-header has-footer" delegate-handle="small">
+			<label class="item item-radio" ng-repeat="code in codes">
+				<input type="radio" name="group" value="{{code.name}}" data-code-name="{{code.name}}">
+				<div class="item-content">
+				  {{code.name}}
+				</div>
+				<i class="radio-icon ion-checkmark"></i>
+			</label>
+
+
+			<!--<ion-item class="item item-checkbox" ng-repeat="code in codes">
+				 <label class="checkbox">
+			       <input type="checkbox" name="selected[]" data-code-name="{{code.name}}">
+			     </label>
+				{{code.name}}
+			</ion-item>-->
+
+		</ion-content>
+		<div class="bar bar-footer">
+	  		<button type="submit" class="button button-positive" style="text-align: center; margin: 0px auto; width: 100%;">
+			Start Jobs
+			</button>
+		</div>
+	</form>
+</div>

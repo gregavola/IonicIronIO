@@ -1,0 +1,41 @@
+<ion-view title="IronIO">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-clear button-positive" ng-click="openModal()">Add</button>
+  </ion-nav-buttons>
+  <ion-content class="has-header" delegate-handle="mainScroll">
+    <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">
+    </ion-refresher>
+    <div class="notification-bar" ng-show="message">{{ message }}</div>
+    <div class="item item-divider" ng-show="queues">
+      IronMQ
+      <h4 ng-show="date" class="date-header">Last Updated: {{date | date:'medium'}}</h4>
+    </div>
+    <div class="loading-ironio main-page-loading" ng-show="!queues">
+      <i class="icon ion-loading-d"></i> 
+    </div>
+    <ion-list>
+      <a class="item" ng-repeat="item in queues" href="#/app/activity/{{item.name}}">
+        {{item.name}}
+        <span class="badge icon ion-looping" id="badgeid_{{item.id}}"></span>
+        
+      </a>
+    </ion-list>
+    <div class="item item-divider" ng-show="codes">
+      IronWorker
+      <h4 ng-show="date" class="date-header">Last Updated: {{date | date:'medium'}}</h4>
+    </div>
+    <ion-list>
+      <a class="item" ng-repeat="code in codes" href="#/app/codes/{{code.id}}/{{code.name}}">
+        {{code.name}}
+        <span style="display:none" id="codes_{{code.name}}">
+        {{ code | json }}
+        </span>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

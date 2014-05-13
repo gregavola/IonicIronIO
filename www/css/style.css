@@ -1,0 +1,38 @@
+/* Empty. Add your own CSS if you like */
+.loading-ironio {
+	padding-top: 50px; font-weight: bold; text-align: center; font-size: 18px;
+}
+
+.main-page-loading {
+	padding-top: 100px !important;
+	padding-bottom: 100px;
+}
+
+.notification-bar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 10px;
+	height: 50px;
+}
+
+.button.button-positive.button-clear {
+	font-weight: bold;
+}
+
+.date-header {
+	font-size: 11px !important;
+}
+
+.bump {
+	margin-top: 50px !important;
+}
+
+.ion-looping {
+	display: block !important;
+}
+
+.ion-loading-d {
+	font-size: 25px;
+}

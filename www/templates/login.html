@@ -1,0 +1,33 @@
+<ion-view title="IronIO Login">
+ <ion-content class="has-header has-footer">
+  <form id="settings-form">
+  <div class="list">
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Project ID</span>
+      <input type="text" placeholder="Project ID" ng-model="settings.project_id">
+    </label>
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Access Token</span>
+      <input type="text" placeholder="Access Token" ng-model="settings.access_token">
+    </label>
+    <label class="item item-input item-select">
+      <div class="input-label">
+        IronMQ Location
+      </div>
+      <select id="host_picker" ng-model="settings.selected_host">
+        <option value="" selected="TRUE">Select a Region</option>
+        <option value="aws_useast">AWS East</option>
+        <option value="aws_euwest">AWS EU West</option>
+        <option value="rs_ord">Rackspace ORD</option>
+        <option value="rs_lon">Rackspace LON</option>
+      </select>
+    </label>
+  </div>
+  <div class="padding">
+    <button type="submit" ng-click="loginIron(settings);" class="button button-block button-positive">
+      Login
+    </button>
+  </div>
+  </form>
+  </ion-content>
+</ion-view>

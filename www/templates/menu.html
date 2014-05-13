@@ -1,0 +1,28 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <ion-content class="has-header">
+       <ion-list>
+        <ion-item nav-clear menu-close href="#/app/activity">
+          Activity
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/settings">
+          Settings
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/status">
+          Status
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/about">
+          About
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
